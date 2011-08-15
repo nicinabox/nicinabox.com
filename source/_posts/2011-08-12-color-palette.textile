@@ -7,7 +7,7 @@ categories: Projects
 #published: false
 ---
 
-This is a color palette that I've compiled. I recommend using a tool like "0to255":0to255.com to find shades of these colors to your liking. Enjoy!
+This is a color palette that I've compiled. I recommend using a tool like "0to255":http://0to255.com to find shades of these colors to your liking. Enjoy!
 
 {% render_partial partials/colors/index.html %}
 
