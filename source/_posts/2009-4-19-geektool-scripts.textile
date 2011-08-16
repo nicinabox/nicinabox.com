@@ -150,8 +150,6 @@ gmail
 
 h3. IP Address
 
-This script requires a username and password. You must edit it before use. Replace @USERNAME@ & @PASSWORD@ with your username and password. _Credits to Greg Newman for this script_
-
 {% codeblock %}
 ipaddress
 {% endcodeblock %}
