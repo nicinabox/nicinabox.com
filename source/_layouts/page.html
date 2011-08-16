@@ -31,6 +31,7 @@ layout: default
 </div>
 {% unless page.sidebar == false %}
 <aside role=sidebar>
+  {% render_partial _includes/custom/asides/about.html %}
   {% if site.page_asides.size %}
     {% include_array page_asides %}
   {% else %}
