@@ -32,6 +32,7 @@
 {% endif %}
 </div>
 <aside role=sidebar>
+  {% render_partial _includes/custom/asides/about.html %}
   {% if site.blog_index_asides.size %}
     {% include_array blog_index_asides %}
   {% else %}
