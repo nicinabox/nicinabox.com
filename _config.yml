@@ -2,8 +2,8 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://nicinabox.heroku.com
-title: "nicinabox"
+url: http://nicinabox.com
+title: "nicinabox (:source)"
 subtitle: "Writings on bikes, beer, and code"
 author: Nic Aitch
 simple_search: http://google.com/search
