@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Shortcutting Heroku Deployments"
+date: 2011-09-12 10:53
+comments: true
+categories: 
+---
+
+If you familiar with Heroku you may know that deploying is as easy as pushing to their remote repository:
+
+{% codeblock %}
+  $ git push heroku
+{% endcodeblock %}
+
+But this can get really monotonous, especially if you're frequently pushing to a staging app (then you have to specify the branch name as well). To make things a little easier I whipped up this little shell function to make deployments a snap.
+
+We always name our heroku remotes _staging_ and _production_. To deploy to staging, for instance, just pass the branch name you want to deploy:
+
+{% codeblock %}
+  $ deploy dev
+{% endcodeblock %}
+
+Here's the function. Just drop it in your @.bashrc@ (or whatever shell config you use).
+
+{% gist 1072008 %}
