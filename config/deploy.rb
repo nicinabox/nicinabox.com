@@ -1,5 +1,10 @@
 require 'bundler/capistrano'
 
+$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
+require "rvm/capistrano"
+set :rvm_ruby_string, 'ruby-1.9.2-head@octopress' 
+set :rvm_type, :user  # Copy the exact line. I really mean :user here
+
 set :application, "Nicinabox Octopress"
 set :repository,  "git@nicinabox.com:nicinabox-octopress"
 
@@ -21,6 +26,10 @@ role :db,  "nicinabox.com", :primary => true # This is where Rails migrations wi
 namespace :deploy do
   task :start do ; end
   task :stop do ; end
+  task :resymlink, :roles => :app do
+    run "rm -f #{current_path} && ln -s #{release_path} #{current_path}"
+  end
+  
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
