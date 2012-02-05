@@ -1,0 +1,9 @@
+# $ deploy dev  // Deploys to staging
+# $ deploy      // Deploys to production
+function deploy() {
+  if [[ $@ != "" ]]; then
+    git push staging $@:master
+  else
+    git push production
+  fi
+}
