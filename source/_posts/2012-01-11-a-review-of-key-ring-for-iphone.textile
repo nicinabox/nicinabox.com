@@ -3,13 +3,14 @@ layout: post
 title: "A Review of Key Ring for iPhone"
 date: 2012-01-11 20:58
 comments: true
-published: false
 categories: rant review
+published: false
 ---
 
 Recently I found myself needing to thin out my wallet again and removed several loyalty cards from my pocket. While now having a thinner wallet, I didn't have my Jewel card every time I went to get food. I decided to try out an app called "Key Ring":http://keyringapp.com/ in which you scan the barcode on the card, then scan your phone when you need to checkout.
 
 I wanted so badly to love it and cherish it and trust it with all of my data (mostly so I could just throw away/forget about the physical cards), but there are a some UI/UX issues that make it an awkward experience at best.
+<!--more-->
 
 h2. A review of the interface
 
