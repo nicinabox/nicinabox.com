@@ -17,7 +17,9 @@ These are an ever growing compilation of scripts and code snippets that I have w
 I encourage you to checkout some of the Desktop screenshots on Flickr (some are very nice!) for ideas.If you have a script or something clever you'd like to add to this collection, please contact me.
 
 These commands require that you actually install the scripts. Some are built into the system, but most are custom. For more information, check @readme.html@ included in the download. 
+
 <!--more-->
+
 This package includes the following: 
 * Network info
 * Unread Gmail

@@ -13,6 +13,7 @@ If you familiar with Heroku you may know that deploying is as easy as pushing to
 {% endcodeblock %}
 
 But this can get really monotonous, especially if you're frequently pushing to a staging app (then you have to specify the branch name as well). To make things a little easier I whipped up this little shell function to make deployments a snap.
+<!--more-->
 
 We always name our heroku remotes _staging_ and _production_. To deploy to staging, for instance, just pass the branch name you want to deploy:
 
