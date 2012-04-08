@@ -4,7 +4,7 @@ title: "Redesign Octopress"
 date: 2012-04-08 15:00
 comments: true
 categories: 
-published: false
+published: true
 ---
 
 I've been meaning to restyle my Octopress to get away from the default theme. Not that there's anything wrong with the default theme, it's just, well, default. 
