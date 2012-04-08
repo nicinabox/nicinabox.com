@@ -17,13 +17,6 @@ $experimental-support-for-microsoft: false;
 
 $helvetica-font-stack: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
-@mixin arno {
-  font-family: 'Arvo', Georgia, Times, serif;
-}
-
-@mixin pt_sans {
-  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-}
 
 // Default body tag variables
 //----------------------------------------------------------------------------------------------------

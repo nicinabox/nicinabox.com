@@ -23,7 +23,10 @@
 }
 figure.code, .gist-file, pre {
   @include box-shadow(rgba(#000, .06) 0 0 10px);
-  .highlight pre { @include box-shadow(none); }
+  .highlight pre { 
+    @include box-shadow(none); 
+    margin: 0;
+  }
 }
 
 html .gist .gist-file {

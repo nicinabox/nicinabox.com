@@ -1,9 +1,18 @@
 h1 {
   @include pt_sans;
 }
-
+h2 {
+  @include arvo;
+}
+h3 {
+  
+}
 p {
   @include pt_sans;
   font-size: 16px;
   line-height: 25px;
+}
+a {
+  color: #D50000;
+  text-decoration: none;
 }
