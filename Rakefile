@@ -6,7 +6,7 @@ require "stringex"
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
 ssh_user       = "nic@nicinabox.com"
 ssh_port       = "22"
-document_root  = "/srv/www/staging2.nicinabox.com/"
+document_root  = "/srv/www/nicinabox.com/public_html"
 rsync_delete   = true
 
 deploy_default = "rsync"
