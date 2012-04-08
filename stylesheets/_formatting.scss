@@ -1,18 +1,31 @@
+body {
+  @include pt_sans;
+  margin: 0;
+}
 h1 {
+  font-size: 28px;
   @include pt_sans;
 }
 h2 {
-  @include arvo;
+  @include pt_sans;
 }
 h3 {
   
 }
 p {
   @include pt_sans;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 25px;
 }
 a {
   color: #D50000;
   text-decoration: none;
+  &:hover {
+    color: lighten(#D50000, 20%);
+  }
+}
+p, li {
+  code {
+    color: #FC0234;
+  }
 }
