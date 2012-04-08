@@ -34,9 +34,11 @@
 
 <aside role=sidebar class="four columns">
   {% render_partial _includes/custom/asides/about.html %}
+  {% comment %}
   {% if site.blog_index_asides.size %}
     {% include_array blog_index_asides %}
   {% else %}
     {% include_array default_asides %}
   {% endif %}
+  {% endcomment %}
 </aside>
