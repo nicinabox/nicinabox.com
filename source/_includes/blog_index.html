@@ -1,4 +1,4 @@
-<div class="blog-index">
+<div class="blog-index eight columns">
 {% assign index = true %}
 {% for post in paginator.posts %}
 {% assign content = post.content %}
@@ -31,7 +31,8 @@
 </script>
 {% endif %}
 </div>
-<aside role=sidebar>
+
+<aside role=sidebar class="four columns">
   {% render_partial _includes/custom/asides/about.html %}
   {% if site.blog_index_asides.size %}
     {% include_array blog_index_asides %}

@@ -1,4 +1,6 @@
 # Require any additional compass plugins here.
+require 'ZURB-foundation'
+
 project_type = :stand_alone
 
 # Publishing paths
@@ -8,9 +10,10 @@ http_fonts_path = "/fonts"
 css_dir = "public/stylesheets"
 
 # Local development paths
-sass_dir = "sass"
+sass_dir = "stylesheets"
 images_dir = "source/images"
 fonts_dir = "source/fonts"
 
 line_comments = false
-output_style = :compressed
+# output_style = :compressed
+output_style = :expanded

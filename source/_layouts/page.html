@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div>
+<div class="eight columns">
 <article role="article">
   {% if page.title %}
   <header>
@@ -31,8 +31,9 @@ layout: default
   </section>
 {% endif %}
 </div>
+
 {% unless page.sidebar == false %}
-<aside class="sidebar">
+<aside class="sidebar four columns">
   {% if site.page_asides.size %}
     {% include_array page_asides %}
   {% else %}

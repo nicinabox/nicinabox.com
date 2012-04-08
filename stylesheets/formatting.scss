@@ -1,0 +1,9 @@
+h1 {
+  @include pt_sans;
+}
+
+p {
+  @include pt_sans;
+  font-size: 16px;
+  line-height: 25px;
+}

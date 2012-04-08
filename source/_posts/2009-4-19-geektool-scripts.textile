@@ -9,7 +9,7 @@ categories: Projects
 p(#update). *UPDATE 8/15/2011:* Most of these scripts have been "repackaged in a gem":http://rubygems.org/gems/geeklets2 available on rubygems.org 
 
 <nav class="try">
-  <a class="download" href="https://github.com/nicinabox/Geektool-Scripts/zipball/master">Download<small>v1.7 (Github)</small></a>
+  <a class="download" href="https://github.com/nicinabox/Geektool-Scripts/zipball/master">Download <small>v1.7 (Github)</small></a>
 </nav>
 
 These are an ever growing compilation of scripts and code snippets that I have written or collected in a format that’s easy to understand and use. If you need help feel free to email me at "nic@nicinabox.com":mailto:nic@nicinabox.com, *but please read the documentation first*. 
