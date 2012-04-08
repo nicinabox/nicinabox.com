@@ -1,6 +1,3 @@
-# Require any additional compass plugins here.
-require 'ZURB-foundation'
-
 project_type = :stand_alone
 
 # Publishing paths
