@@ -12,7 +12,7 @@ categories: Projects
   <a class="download" href="https://github.com/nicinabox/Geektool-Scripts/zipball/master">Download <small>v1.7 (Github)</small></a>
 </nav>
 
-These are an ever growing compilation of scripts and code snippets that I have written or collected in a format that’s easy to understand and use. If you need help feel free to email me at [nic`nicinabox.com](mailto:nic`nicinabox.com), **but please read the documentation first**. 
+These are an ever growing compilation of scripts and code snippets that I have written or collected in a format that’s easy to understand and use. If you need help feel free to email me at [nic@nicinabox.com](mailto:nic@nicinabox.com), **but please read the documentation first**. 
 
 I encourage you to checkout some of the Desktop screenshots on Flickr (some are very nice!) for ideas.If you have a script or something clever you'd like to add to this collection, please contact me.
 
