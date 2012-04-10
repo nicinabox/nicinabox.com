@@ -422,7 +422,7 @@ figure.code {
   background: none;
   padding: 0;
   border: 0;
-  margin-bottom: 1.5em;
+  margin: 1.5em 0;
 }
 figure.code pre {
   margin-bottom: 0;

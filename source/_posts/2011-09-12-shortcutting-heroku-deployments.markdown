@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-If you are familiar with Heroku, you may know that deploying is as easy as pushing to their remote repository:
+If you are familiar with [Heroku](http://heroku.com), you may know that deploying is as easy as pushing to their remote repository:
 
 {% codeblock %}
   $ git push heroku

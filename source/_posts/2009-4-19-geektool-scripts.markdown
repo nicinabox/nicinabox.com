@@ -6,45 +6,46 @@ comments: true
 categories: Projects
 ---
 
-p(#update). *UPDATE 8/15/2011:* Most of these scripts have been "repackaged in a gem":http://rubygems.org/gems/geeklets2 available on rubygems.org 
-
+**UPDATE 8/15/2011:** Most of these scripts have been [repackaged in a gem](http://rubygems.org/gems/geeklets2).
+***
 <nav class="try">
   <a class="download" href="https://github.com/nicinabox/Geektool-Scripts/zipball/master">Download <small>v1.7 (Github)</small></a>
 </nav>
 
-These are an ever growing compilation of scripts and code snippets that I have written or collected in a format that’s easy to understand and use. If you need help feel free to email me at "nic@nicinabox.com":mailto:nic@nicinabox.com, *but please read the documentation first*. 
+These are an ever growing compilation of scripts and code snippets that I have written or collected in a format that’s easy to understand and use. If you need help feel free to email me at [nic`nicinabox.com](mailto:nic`nicinabox.com), **but please read the documentation first**. 
 
 I encourage you to checkout some of the Desktop screenshots on Flickr (some are very nice!) for ideas.If you have a script or something clever you'd like to add to this collection, please contact me.
 
-These commands require that you actually install the scripts. Some are built into the system, but most are custom. For more information, check @readme.html@ included in the download. 
+These commands require that you actually install the scripts. Some are built into the system, but most are custom. For more information, check `readme.html` included in the download. 
 
 <!--more-->
 
 This package includes the following: 
-* Network info
-* Unread Gmail
-* Uptime
-* Calendar (with current day denoted)
-* Weather
-* System Stats
-* Recent Music plays
 
-h2. Installing the scripts
+  * Network info
+  * Unread Gmail
+  * Uptime
+  * Calendar (with current day denoted)
+  * Weather
+  * System Stats
+  * Recent Music plays
+
+## Installing the scripts
 
 Note: this step can be skipped if you're using the gem.
 
-Copy files to a directory in your PATH. I recommend @/usr/local/bin@. This will make the commands accessible by just typing the name of it, eg.
+Copy files to a directory in your PATH. I recommend `/usr/local/bin`. This will make the commands accessible by just typing the name of it, eg.
 {% codeblock %}
 $ airport
 {% endcodeblock %}
 
 That's it!
 
-h2. Using the scripts
+## Using the scripts
 
 After you've got them installed you'll want to pop open Geektool and enter the command in the Command field. You should immediately see output on your desktop. For time sensitive scripts like weather you'll probably want to set a refresh time of 30-60 seconds.
 
-If you're using the gem and RVM you need to include and extra line in the command. Geektool runs in a subshell and does not use custom PATHs specified in your @.bash_profile@ or @.profile@. Simply tell Geektool to use your profile as the source of the subshell (the period means "source").
+If you're using the gem and RVM you need to include and extra line in the command. Geektool runs in a subshell and does not use custom PATHs specified in your `.bash_profile` or `.profile`. Simply tell Geektool to use your profile as the source of the subshell (the period means "source").
 
 {% codeblock command.sh %}
 . /Users/nic/.bash_profile # be sure to include this part if using the gem
@@ -53,7 +54,7 @@ weather -z 60614
 
 Obviously substitute my username for your own shortname.
 
-h3. Uptime
+### Uptime
 
 Displays your system's uptime.
 
@@ -64,11 +65,11 @@ uptime | awk '{print "Uptime : " $3 " " $4 " " $5 }' | sed -e 's/.$//g'
 Uptime : 25 days, 8:28
 {% endcodeblock %}
 
-h3. Network Info
+### Network Info
 
 Displays your Wifi or Ethernet IP. Also see IP script
 
-h4. Internal IP
+#### Internal IP
 
 {% codeblock %}
 ifconfig en1 | grep "inet " | awk '{print $2}'
@@ -77,7 +78,7 @@ ifconfig en1 | grep "inet " | awk '{print $2}'
 192.168.1.2
 {% endcodeblock %}
 
-h4. External IP
+#### External IP
 
 {% codeblock %}
 curl -s www.whatismyip.com/automation/n09230945.asp | awk {'print "External : " $1'}
@@ -86,7 +87,7 @@ curl -s www.whatismyip.com/automation/n09230945.asp | awk {'print "External : " 
 External: 72.45.123.12
 {% endcodeblock %}
 
-h3. Calendar
+### Calendar
 
 {% codeblock %}
 cal | sed "s/^/ /;s/$/ /;s/ $(date +%e) / $(date +%e | sed 's/./#/g') /"
@@ -101,7 +102,7 @@ Su Mo Tu We Th Fr Sa
 26 27 28 29 30 31 
 {% endcodeblock %}
 
-h3. Memory Usage
+### Memory Usage
 
 Prints out total Memory Usage
 
@@ -114,9 +115,9 @@ Used:  1769M
 Inactive:  688M
 {% endcodeblock %}
 
-h3. CPU Usage
+### CPU Usage
 
-h4. Horizontal
+#### Horizontal
 
 {% codeblock %}
 top -l 1| awk '/CPU usage/ {print $6, $7, $8, $9, $10, $11, $12, $13}'
@@ -125,7 +126,7 @@ top -l 1| awk '/CPU usage/ {print $6, $7, $8, $9, $10, $11, $12, $13}'
 CPU usage: 22.22% user, 71.11% sys, 6.67% idle
 {% endcodeblock %}
 
-h4. Vertical
+#### Vertical
 
 {% codeblock %}
 echo CPU usage
@@ -139,9 +140,9 @@ CPU usage
 71.11% sys,
 6.67% idle{% endcodeblock %}
 
-h3. Unread Gmail
+### Unread Gmail
 
-This script requires a username and password. You must edit it before use. Replace @USERNAME@ & @PASSWORD@ with your username and password. _Credits to Greg Newman._
+This script requires a username and password. You must edit it before use. Replace `USERNAME` `PASSWORD` with your username and password. _Credits to Greg Newman._
 
 {% codeblock %}
 gmail
@@ -150,7 +151,7 @@ gmail
 3 Unread
 {% endcodeblock %}
 
-h3. IP Address
+### IP Address
 
 {% codeblock %}
 ipaddress
