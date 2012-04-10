@@ -507,6 +507,11 @@ p code, li code {
   color: #FC0234;
 }
 
+hr {
+  border: 0;
+  border-bottom: 1px dashed #aaa;
+}
+
 .container {
   max-width: 620px;
   padding: 0 20px;
