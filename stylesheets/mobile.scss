@@ -1,0 +1,13 @@
+@import "compass";
+
+@media screen and (max-width: 480px){
+  #blog-archives {
+    > h2 {
+      margin: 0;
+      margin-top: 10px;
+      float: none;
+      color: #aaa;
+      @include rotate(0);
+    }
+  }
+}

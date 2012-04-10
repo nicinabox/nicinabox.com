@@ -10,9 +10,12 @@
     <div class="row" id="content">
       {{ content | expand_urls: root_url }}
     </div>
-    
-    <div class="row">
-      <footer role="contentinfo">{% include footer.html %}</footer>
+  </div>
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="row">
+        {% include footer.html %}
+      </div>
       {% include after_footer.html %}
     </div>
   </div>

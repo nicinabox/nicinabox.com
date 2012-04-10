@@ -100,3 +100,25 @@ footer[role=contentinfo] {
     }
   }
 }
+
+#blog-archives {
+  > h2 {
+    margin-left: -70px;
+    float: left;
+    color: #aaa;
+    @include rotate(-90deg);
+  }
+  > article {
+    padding: 20px 0;
+    h1 {
+      margin: 0;
+    }
+    time {
+      color: #999;
+    }
+    footer {
+      padding: 0;
+      color: #999;
+    }
+  }
+}
