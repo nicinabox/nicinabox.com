@@ -476,6 +476,7 @@ figure.code .highlight {
 }
 
 body {
+  background: url('/images/light_wool.png') left top repeat;
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   margin: 0;
 }
@@ -512,9 +513,22 @@ hr {
   border-bottom: 1px dashed #aaa;
 }
 
+img {
+  padding: 2px;
+  border: 1px solid #ddd;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease;
+  -ms-transition: border-color 0.2s ease;
+  -o-transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease;
+}
+img:hover {
+  border-color: #333;
+}
+
 .container {
   max-width: 620px;
-  padding: 0 20px;
+  padding: 20px;
   margin: 0 auto;
 }
 
