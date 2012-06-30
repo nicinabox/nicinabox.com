@@ -619,3 +619,27 @@ footer[role=contentinfo] p {
   color: #aaa;
   font-size: 14px;
 }
+
+#blog-archives > h2 {
+  margin-left: -70px;
+  float: left;
+  color: #aaa;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+#blog-archives > article {
+  padding: 20px 0;
+}
+#blog-archives > article h1 {
+  margin: 0;
+}
+#blog-archives > article time {
+  color: #999;
+}
+#blog-archives > article footer {
+  padding: 0;
+  color: #999;
+}
