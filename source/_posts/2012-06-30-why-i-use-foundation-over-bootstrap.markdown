@@ -9,6 +9,8 @@ published: true
 
 When discussing or suggesting [Foundation](http://foundation.zurb.com/) over [Twitter Bootstrap](http://twitter.github.com/bootstrap) I oven get responses like "Why bother?", or "Why reinvent the wheel?", or whatever. Having deep dived into the code of both of these frameworks, let me tell you what I like and dislike about them and why I ultimately chose Foundation.
 
+<!-- more -->
+
 ## Software is opinionated
 
 There are few topics that you can find such strong opinions on how things should be done. Politics and software are two of them. The beautiful thing about software is, if you done like the way something is done, you can make your own.
