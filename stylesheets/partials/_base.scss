@@ -17,3 +17,10 @@ $link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
 @mixin pt_sans {
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 }
+
+.mono {
+  font-family: $mono;
+}
+.sans {
+  font-family: $sans;
+}
