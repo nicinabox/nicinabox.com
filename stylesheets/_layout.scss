@@ -4,7 +4,7 @@ body {
 
 .row {
   margin: 0;
-  margin-left: 100px;
+  margin-left: 10%;
   min-width: 400px;
 }
 
@@ -22,7 +22,8 @@ body {
 }
 
 #footer {
-
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
 }
 
 .blog-index {
@@ -33,6 +34,6 @@ body {
 }
 .pagination {
   padding: 20px 0 10px;
-  border-bottom: 1px solid #ddd;
+  margin-bottom: -30px;
   background: #efefef;
 }
