@@ -1,24 +1,24 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 {% include head.html %}
 <body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
-  
-  <div class="container">
+
+  <header role="banner" id="header">
     <div class="row">
-    	<header role="banner">{% include header.html %}</header>
+      {% include header.html %}
     </div>
-    
-    <div class="row" id="content">
-      {{ content | expand_urls: root_url }}
-    </div>
+  </header>
+
+  <div id="main">
+    {{ content | expand_urls: root_url }}
   </div>
-  <footer role="contentinfo">
-    <div class="container">
-      <div class="row">
-        {% include footer.html %}
-      </div>
-      {% include after_footer.html %}
+
+  <footer role="contentinfo" id="footer">
+    <div class="row">
+      {% include footer.html %}
     </div>
-  </div>
-  
+
+    {% include after_footer.html %}
+  </footer>
+
   </body>
 </html>

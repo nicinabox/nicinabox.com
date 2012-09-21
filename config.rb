@@ -1,3 +1,5 @@
+require 'zurb-foundation'
+
 project_type = :stand_alone
 
 # Publishing paths

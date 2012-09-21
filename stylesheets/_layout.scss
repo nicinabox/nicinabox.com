@@ -1,0 +1,38 @@
+body {
+  background: #f7f7f7;
+}
+
+.row {
+  margin: 0;
+  margin-left: 100px;
+  min-width: 400px;
+}
+
+#header {
+  border-bottom: 1px solid #ddd;
+  h1 {
+    font-size: ms(3);
+    a {
+      color: #666;
+    }
+    small {
+      color: #aaa;
+    }
+  }
+}
+
+#footer {
+
+}
+
+.blog-index {
+  article {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0 36px;
+  }
+}
+.pagination {
+  padding: 20px 0 10px;
+  border-bottom: 1px solid #ddd;
+  background: #efefef;
+}
