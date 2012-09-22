@@ -1,0 +1,19 @@
+{% capture total_words %}
+  {{ post.content | number_of_words }}
+{% endcapture %}
+
+<a href="{{ root_url }}{{ post.url }}">
+  <div class="words">
+    <div class="bar" style="width: {{ total_words | divided_by:100 | times:10 }}%">
+    </div>
+    <span class="count">{{ total_words }} words</span>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns">
+      <h3>
+          {{ post.title }}
+      </h3>
+    </div>
+  </div>
+</a>

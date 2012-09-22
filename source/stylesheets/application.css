@@ -464,12 +464,12 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 p.lead {
   font-size: 20px;
   line-height: 1.6;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 aside p {
@@ -498,19 +498,19 @@ h1 {
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 36px;
 }
 
 h3 {
-  font-size: 27px;
+  font-size: 29px;
 }
 
 h4 {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 h5 {
-  font-size: 17px;
+  font-size: 20px;
 }
 
 h6 {
@@ -529,7 +529,7 @@ hr {
   line-height: 1.3;
   color: #6f6f6f;
   font-weight: 300;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 em, i {
@@ -556,7 +556,7 @@ code {
 ul, ol {
   font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   list-style-position: inside;
 }
 
@@ -565,7 +565,7 @@ ul li ul, ul li ol {
   margin-bottom: 0;
 }
 ul.square, ul.circle, ul.disc {
-  margin-left: 17px;
+  margin-left: 20px;
 }
 ul.square {
   list-style-type: square;
@@ -604,7 +604,7 @@ blockquote, blockquote p {
 }
 
 blockquote {
-  margin: 0 0 17px;
+  margin: 0 0 20px;
   padding: 9px 20px 0 19px;
   border-left: 1px solid #ddd;
 }
@@ -713,7 +713,7 @@ abbr {
    globals.css */
 /* Standard Forms ---------------------- */
 form {
-  margin: 0 0 19.41641px;
+  margin: 0 0 18px;
 }
 
 .row form .row {
@@ -819,7 +819,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   transition: all 0.15s linear;
 }
 input[type="text"].oversize, input[type="password"].oversize, input[type="date"].oversize, input[type="datetime"].oversize, input[type="email"].oversize, input[type="number"].oversize, input[type="search"].oversize, input[type="tel"].oversize, input[type="time"].oversize, input[type="url"].oversize, textarea.oversize {
-  font-size: 17px;
+  font-size: 20px;
   padding: 4px 6px;
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus {
@@ -1662,7 +1662,7 @@ that IE7/8 do not support :nth-child.
   color: white;
 }
 .button.large {
-  font-size: 17px;
+  font-size: 20px;
   padding: 15px 30px 16px;
 }
 .button.medium {
@@ -2561,7 +2561,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 .top-bar > ul .name h1 a {
   font-weight: bold;
   padding: 0 22.5px;
-  font-size: 17px !important;
+  font-size: 20px !important;
 }
 .top-bar > ul .name img {
   margin-top: -5px;
@@ -3001,7 +3001,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   .top-bar ul li.has-dropdown.moved .back.title h5 a {
     padding-top: 8px;
     padding-bottom: 8px;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
   }
   .top-bar ul li.has-dropdown .dropdown li {
@@ -3097,7 +3097,7 @@ div.orbit {
   height: 1px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 div.orbit.with-bullets {
@@ -3494,7 +3494,7 @@ dl.tabs dd a {
   font-size: 16px;
   height: 40px;
   line-height: 40px;
-  padding: 0px 23.8px;
+  padding: 0px 28px;
 }
 dl.tabs dd a:focus {
   font-weight: bold;
@@ -3599,7 +3599,7 @@ dl.tabs.pill.two-up dd, dl.tabs.pill.three-up dd, dl.tabs.pill.four-up dd, dl.ta
   margin-right: 0;
 }
 dl.tabs.two-up dt a, dl.tabs.two-up dd a, dl.tabs.three-up dt a, dl.tabs.three-up dd a, dl.tabs.four-up dt a, dl.tabs.four-up dd a, dl.tabs.five-up dt a, dl.tabs.five-up dd a {
-  padding: 0 17px;
+  padding: 0 20px;
   text-align: center;
   overflow: hidden;
 }
@@ -3931,7 +3931,7 @@ div.alert-box a.close {
   position: absolute;
   right: 4px;
   top: -1px;
-  font-size: 17px;
+  font-size: 20px;
   opacity: 0.2;
   padding: 4px;
 }
@@ -4193,7 +4193,7 @@ ul.side-nav {
   display: block;
   list-style: none;
   margin: 0;
-  padding: 17px 0;
+  padding: 20px 0;
 }
 ul.side-nav li {
   display: block;
@@ -4344,7 +4344,7 @@ ul.breadcrumbs li.unavailable:hover a, ul.breadcrumbs li.unavailable a:focus {
 
 /* Link List */
 ul.link-list {
-  margin: 0 0 17px -22px;
+  margin: 0 0 20px -22px;
   padding: 0;
   list-style: none;
   overflow: hidden;
@@ -4583,7 +4583,7 @@ body {
   border-bottom: 1px solid #ddd;
 }
 #header h1 {
-  font-size: 27px;
+  font-size: 29px;
 }
 #header h1 a {
   color: #666;
@@ -4604,5 +4604,6 @@ body {
 
 .pagination {
   padding: 20px 0 10px;
+  margin-bottom: -30px;
   background: #efefef;
 }

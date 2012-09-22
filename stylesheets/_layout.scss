@@ -37,3 +37,37 @@ body {
   margin-bottom: -30px;
   background: #efefef;
 }
+
+.archived {
+  position: relative;
+  padding: 0 !important;
+  .words {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    .bar {
+      background: #eee;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+    }
+    .count {
+      left: 10px;
+      width: 10%;
+      position: absolute;
+      color: #666;
+      font-weight: bold;
+      padding: 23px 0;
+    }
+  }
+  a {
+    &:hover {
+      h3 {
+        color: $mainColor;
+      }
+      .bar {
+        background: #e7e7e7;
+      }
+    }
+  }
+}
