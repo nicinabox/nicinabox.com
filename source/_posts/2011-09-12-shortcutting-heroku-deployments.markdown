@@ -3,7 +3,7 @@ layout: post
 title: "Shortcutting Heroku Deployments"
 date: 2011-09-12 10:53
 comments: true
-categories: 
+categories:
 ---
 
 If you are familiar with [Heroku](http://heroku.com), you may know that deploying is as easy as pushing to their remote repository:
@@ -21,6 +21,6 @@ We always name our Heroku remotes _staging_ and _production_. To deploy to stagi
   $ deploy dev
 {% endcodeblock %}
 
-Here's the function. Just drop it in your @.bashrc@ (or whatever shell config you use).
+Here's the function. Just drop it in your `.bashrc` (or whatever shell config you use).
 
 {% gist 1072008 %}
