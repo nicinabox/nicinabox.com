@@ -1,3 +1,5 @@
+{% assign total_words = post.content | number_of_words %}
+
 <a href="{{ root_url }}{{ post.url }}">
   <div class="words" data-words="{{ total_words | times: 1 }}">
     <div class="bar"></div>

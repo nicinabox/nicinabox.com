@@ -4,12 +4,13 @@
   Reading time:
 
   <b>
-    {% if reading_time == 1 %}
-      about {{ reading_time }} minute
-    {% elsif reading_time < 1 %}
+    {% case reading_time %}
+    {% when 1 %}
+      about a minute
+    {% when 0 %}
       less than a minute
     {% else %}
       about {{ reading_time }} minutes
-    {% endif %}
+    {% endcase %}
   </b>
 </span>
