@@ -1,7 +1,10 @@
 <div class="twelve columns">
   <hgroup>
     <h1>
-      <a href="{{ root_url }}/">{{ site.title }}</a>
+      <a href="{{ root_url }}/" id="logo">
+        <img src="/images/home.png" alt="">
+        {{ site.title }}
+      </a>
       {% if site.subtitle %}
         <small>{{ site.subtitle }}</small>
       {% endif %}
