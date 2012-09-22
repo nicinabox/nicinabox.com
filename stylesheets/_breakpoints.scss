@@ -1,0 +1,15 @@
+@media only screen and (max-width: $screenSmall) {
+  .row {
+    padding: 0;
+  }
+
+  .archived {
+    a {
+      &:hover {
+        .count {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 $mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
 
-$rowWidth: 570px;
+$rowWidth: 550px;
 
 $mainColor: #1B5891;
 $secondaryColor: #e9e9e9;
@@ -14,3 +14,5 @@ $bodyFontFamily: "PT Serif", Georgia, Times, "Times New Roman", serif;
 $ratio: $fifth;
 $baseFontSize: 16px;
 $importantModNum: 44px;
+
+$screenSmall: $rowWidth + 100px;

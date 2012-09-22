@@ -1,12 +1,13 @@
 (function($) {
   $(function() {
-    var longest = 0;
-    var $wordcounts = $('[data-words]').each(function () {
-      var count = +$(this).data('words');
-      if (count > longest) {
-        longest = count;
-      }
-    });
+    // Lifted from http://jackosborne.co.uk/
+    var longest = 0,
+        $wordcounts = $('[data-words]').each(function () {
+          var count = +$(this).data('words');
+          if (count > longest) {
+            longest = count;
+          }
+        });
 
     longest = 100 / longest;
 
