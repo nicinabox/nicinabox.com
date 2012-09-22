@@ -5,7 +5,10 @@
 <a href="{{ root_url }}{{ post.url }}">
   <div class="words" data-words="{{ total_words | times: 1 }}">
     <div class="bar"></div>
-    <span class="count">{{ total_words }} words</span>
+    <span class="count">
+      {{ total_words }} <br>
+      words
+    </span>
   </div>
 
   <div class="row">

@@ -35,7 +35,9 @@
 
 {% if index %}
   <div class="entry-content">
-    {{ content | excerpt }}
+    <p class="lede">
+      {{ content | excerpt | strip_html }}
+    </p>
   </div>
 
   {% capture excerpted %}
