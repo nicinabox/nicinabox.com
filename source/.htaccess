@@ -9,8 +9,8 @@ ErrorDocument 404 /404.html
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+
+  # Fix old permalinks
+  RedirectMatch 301 ^/blog/\d{4}/\d{2}/\d{2}/(.*)$ /blog/$1
+
 </IfModule>
-
-# Fix old permalinks
-
-RewriteRule (.*blog\/)(\d{4}\/\d{2}\/\d{2}\/)(.*) $1$3 [R=301,L]
