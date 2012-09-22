@@ -4590,6 +4590,7 @@ html .gist .gist-file .gist-syntax .gist-highlight .gutter,
 }
 html .gist .gist-file .gist-syntax .gist-highlight code,
 .highlight code {
+  padding: 0;
   background: none;
   border: none;
   -webkit-border-radius: 0;
@@ -4634,6 +4635,10 @@ code {
 }
 .code table {
   width: 100%;
+}
+
+.button {
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
 }
 
 #logo img {
