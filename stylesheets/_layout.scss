@@ -4,7 +4,7 @@ body {
 
 .row {
   margin: 0;
-  margin-left: 10%;
+  margin: 0 10%;
   min-width: 400px;
 }
 
@@ -24,9 +24,11 @@ body {
 #footer {
   border-top: 1px solid #ddd;
   margin-top: 30px;
+  padding: 30px 0;
 }
 
 .blog-index {
+  margin-bottom: -31px;
   article {
     border-bottom: 1px solid #ddd;
     padding: 20px 0 36px;
@@ -41,6 +43,9 @@ body {
 .archived {
   position: relative;
   padding: 0 !important;
+  h3 {
+    font-weight: normal;
+  }
   .words {
     position: absolute;
     height: 100%;
@@ -57,7 +62,9 @@ body {
       position: absolute;
       color: #666;
       font-weight: bold;
-      padding: 23px 0;
+      bottom: 20px;
+      display: none;
+      @include font-size(13);
     }
   }
   a {
@@ -67,6 +74,9 @@ body {
       }
       .bar {
         background: #e7e7e7;
+      }
+      .count {
+        display: inline;
       }
     }
   }
