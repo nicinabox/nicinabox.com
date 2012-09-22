@@ -4569,6 +4569,43 @@ div.progress.round .meter {
   border-radius: 1000px;
 }
 
+html .gist .gist-file .gist-syntax .gist-highlight table td.code,
+.highlight table td.code {
+  width: 100%;
+}
+html .gist .gist-file .gist-syntax .gist-highlight .line-numbers,
+.highlight .line-numbers {
+  text-align: right;
+  font-size: 13px;
+  line-height: 1.45em;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+html .gist .gist-file .gist-syntax .gist-highlight .gutter,
+.highlight .gutter {
+  background: #f7f7f7;
+}
+html .gist .gist-file .gist-syntax .gist-highlight code,
+.highlight code {
+  background: none;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+figure.code figcaption, .gist-file figcaption, pre figcaption {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  background: #eee;
+}
+
 body {
   background: #f7f7f7;
 }
@@ -4590,6 +4627,13 @@ code {
 .lede {
   font-size: 18px;
   font-size: 1.8rem;
+}
+
+.code .highlight {
+  background: none;
+}
+.code table {
+  width: 100%;
 }
 
 #logo img {
