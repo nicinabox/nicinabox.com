@@ -395,7 +395,7 @@ p a, p a:visited {
 .left {
   float: left;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
   .left {
     float: none;
   }
@@ -404,7 +404,7 @@ p a, p a:visited {
 .right {
   float: right;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
   .right {
     float: none;
   }
@@ -746,7 +746,7 @@ label.inline {
   margin: 0 0 12px 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
   label.right {
     text-align: left;
   }
@@ -884,7 +884,7 @@ fieldset legend {
   border-bottom-right-radius: 2px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
   input[type="text"].one, input[type="password"].one, input[type="date"].one, input[type="datetime"].one, input[type="email"].one, input[type="number"].one, input[type="search"].one, input[type="tel"].one, input[type="time"].one, input[type="url"].one, textarea.one, .row textarea.one {
     width: 100% !important;
   }
@@ -1139,9 +1139,9 @@ form.custom .custom.disabled {
 
 /* The Grid ---------------------- */
 .row {
-  width: 570px;
+  width: 550px;
   max-width: 100%;
-  min-width: 768px;
+  min-width: 650px;
   margin: 0 auto;
 }
 .row .row {
@@ -1372,7 +1372,7 @@ img {
 }
 
 /* Mobile Grid and Overrides ---------------------- */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
   body {
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
@@ -1580,7 +1580,7 @@ that IE7/8 do not support :nth-child.
 }
 
 /* Mobile Block Grids */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
   .block-grid.mobile > li {
     float: none;
     width: 100%;
@@ -1788,7 +1788,7 @@ input[type=submit].button, button.button {
   -webkit-appearance: none;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
   .button {
     display: block;
   }
@@ -2174,7 +2174,7 @@ ul.button-group.even.five-up li {
   width: 20%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
   .button-group button.button, .button-group input[type="submit"].button {
     width: auto;
     padding: 10px 20px 11px;
@@ -2433,7 +2433,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
     padding-right: 36px !important;
   }
 }
-@media only screen and (max-width: 1279px) and (min-width: 768px) {
+@media only screen and (max-width: 1279px) and (min-width: 650px) {
   .touch .nav-bar li a {
     font-size: 13px;
     font-size: 1.3rem;
@@ -2447,7 +2447,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
     padding-right: 36px !important;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
   .nav-bar {
     height: auto;
   }
@@ -2551,7 +2551,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   /* topbar global <ul> styles */
 }
 .contain-to-grid .top-bar {
-  width: 570px;
+  width: 550px;
   margin: 0 auto;
 }
 .top-bar > ul .name h1 {
@@ -3422,7 +3422,7 @@ ul.orbit-bullets li.active.has-thumb {
 }
 
 /* Mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
   .reveal-modal-bg {
     position: absolute;
   }
@@ -3643,7 +3643,7 @@ ul.tabs-content.contained.vertical > li {
   display: block;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
   dl.tabs.mobile {
     width: auto;
     margin: 20px -20px 40px;
@@ -3780,7 +3780,7 @@ ul.tabs-content.contained.vertical > li {
   }
 }
 /* Medium display targeting */
-@media only screen and (max-width: 1279px) and (min-width: 768px) {
+@media only screen and (max-width: 1279px) and (min-width: 650px) {
   .hide-for-small,
   .show-for-medium,
   .show-for-medium-down,
@@ -3800,7 +3800,7 @@ ul.tabs-content.contained.vertical > li {
   }
 }
 /* Small display targeting */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
   .show-for-small,
   .hide-for-medium,
   .show-for-medium-down,
@@ -3877,7 +3877,7 @@ table.hide-for-medium {
   display: table !important;
 }
 
-@media only screen and (max-width: 1279px) and (min-width: 768px) {
+@media only screen and (max-width: 1279px) and (min-width: 650px) {
   .touch table.hide-for-xlarge,
   .touch table.hide-for-large,
   .touch table.hide-for-small,
@@ -3885,7 +3885,7 @@ table.hide-for-medium {
     display: table !important;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
   table.hide-for-xlarge,
   table.hide-for-large,
   table.hide-for-medium,
@@ -4068,7 +4068,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   font-weight: normal;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
   .tooltip {
     font-size: 14px;
     font-size: 1.4rem;
@@ -4587,10 +4587,14 @@ code {
   padding: 3px 5px;
 }
 
+.lede {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
 .row {
+  padding: 0 50px;
   margin: 0;
-  margin: 0 10%;
-  min-width: 400px;
 }
 
 #header {
@@ -4612,12 +4616,15 @@ code {
   padding: 30px 0;
 }
 
+article {
+  padding: 20px 0 36px;
+}
+
 .blog-index {
   margin-bottom: -31px;
 }
 .blog-index article {
   border-bottom: 1px solid #ddd;
-  padding: 20px 0 36px;
 }
 
 .meta {
@@ -4656,8 +4663,8 @@ code {
   font-weight: bold;
   bottom: 20px;
   display: none;
-  font-size: 13px;
-  font-size: 1.3rem;
+  font-size: 11px;
+  font-size: 1.1rem;
 }
 .archived a:hover h3 {
   color: #1b5891;
@@ -4667,4 +4674,14 @@ code {
 }
 .archived a:hover .count {
   display: inline;
+}
+
+@media only screen and (max-width: 650px) {
+  .row {
+    padding: 0;
+  }
+
+  .archived a:hover .count {
+    display: none;
+  }
 }

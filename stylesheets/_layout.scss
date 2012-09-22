@@ -18,6 +18,9 @@ code {
 .row {
   padding: 0 50px;
   margin: 0;
+  .row {
+    padding: 0;
+  }
 }
 
 #header {
