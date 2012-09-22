@@ -1,0 +1,15 @@
+{% assign reading_time = total_words | divided_by: 150 %}
+
+<span>
+  Reading time:
+
+  <b>
+    {% if reading_time == 1 %}
+      about {{ reading_time }} minute
+    {% elsif reading_time < 1 %}
+      less than a minute
+    {% else %}
+      about {{ reading_time }} minutes
+    {% endif %}
+  </b>
+</span>
