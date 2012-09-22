@@ -40,9 +40,7 @@
     </p>
   </div>
 
-  {% capture excerpted %}
-    {{ content | has_excerpt }}
-  {% endcapture %}
+  {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
 
   {% if excerpted == 'true' %}
     <footer>

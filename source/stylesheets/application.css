@@ -4592,9 +4592,24 @@ code {
   font-size: 1.8rem;
 }
 
+#logo img {
+  position: absolute;
+  left: -30px;
+  top: 19px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  display: none;
+}
+#logo:hover img {
+  display: inline;
+}
+
 .row {
   padding: 0 50px;
   margin: 0;
+}
+.row .row {
+  padding: 0;
 }
 
 #header {
