@@ -12,5 +12,6 @@ ErrorDocument 404 /404.html
 
   # Fix old permalinks
   RedirectMatch 301 ^/blog/\d{4}/\d{2}/\d{2}/(.*)$ /blog/$1
+  RedirectMatch 301 ^/projects/(.*)$ /blog/$1
 
 </IfModule>
