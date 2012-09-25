@@ -3,7 +3,7 @@ layout: post
 title: "Shortcutting Heroku Deployments"
 date: 2011-09-12 10:53
 comments: true
-categories:
+categories: Software
 ---
 
 If you are familiar with [Heroku](http://heroku.com), you may know that deploying is as easy as pushing to their remote repository:

@@ -3,11 +3,11 @@ layout: post
 title: "Superslides: A fullscreen jQuery slider"
 date: 2012-09-22 11:31
 comments: true
-categories: Project
+categories: Projects
 published: true
 ---
 
-Back in April 2012 I started working on a fullscreen JavaScript slider called [Superslides](http://nicinabox.github.com/superslides/). It's had some interest, so I wanted to officially announce it here.
+#### Back in April 2012 I started working on a fullscreen JavaScript slider called [Superslides](http://nicinabox.github.com/superslides/). It's had some interest, so I wanted to officially announce it here.
 
 <!-- more -->
 
