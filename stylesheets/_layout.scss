@@ -77,12 +77,20 @@ article {
   }
 }
 .meta {
-  color: #666;
+  color: #888;
 }
 .pagination {
   padding: 20px 0 10px;
   margin-bottom: -30px;
   background: #efefef;
+}
+
+.entry-content {
+  h4 {
+    font-family: $bodyFontFamily;
+    line-height: 1.4;
+    font-weight: normal;
+  }
 }
 
 .archived {
