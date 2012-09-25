@@ -1,0 +1,8 @@
+.button {
+  border: 0;
+  @include box-shadow(none);
+  &.secondary {
+    border: 0;
+    background-color: #ddd;
+  }
+}
