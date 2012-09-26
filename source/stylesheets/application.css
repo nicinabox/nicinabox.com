@@ -4698,7 +4698,7 @@ article {
 .blog-index {
   margin-bottom: -31px;
 }
-.blog-index article {
+.blog-index .archived {
   border-bottom: 1px solid #ddd;
 }
 
@@ -4713,7 +4713,7 @@ article {
 }
 
 #category-filter {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
   padding: 15px 0;
 }
 #category-filter #categories {
@@ -4724,8 +4724,21 @@ article {
   list-style: none;
 }
 #category-filter #categories li a {
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
   display: block;
   margin-right: 10px;
+  padding: 1px 10px 3px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+#category-filter #categories li a.active {
+  background: #e9e9e9;
+  color: #444;
 }
 
 .entry-content h4 {
