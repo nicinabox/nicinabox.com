@@ -7,7 +7,7 @@ categories: [Projects, Software]
 published: false
 ---
 
-#### [Hatchpass](http://beta.hatchpass.org) is a password tool I built to help with "the password problem." It creates complex, pseudo-random, unique passwords. You don't have to remember any of them.
+#### [Hatchpass](http://beta.hatchpass.org) is a password tool I built to help with the password problem--or, using the same password everywhere. It creates complex, pseudo-random, unique passwords. You don't have to remember any of them.
 
 <!-- more -->
 
@@ -21,7 +21,9 @@ It's very common that users will reuse the same password across the web on accou
 
 These 3rd party services store your password. That makes them inherently untrustworthy. Hatchpass does not store anything. Since you can easily recreate **your** passwords, storage is an unnecessary risk.
 
-There is no signup, no account, no "user". You simply use it.
+There is no sign up, no account, no "user". You simply use it.
+
+They also generate actual random passwords. Since they're random, they have to be stored. You can't get that random password again.
 
 ## I get it. How does this help me?
 
@@ -71,7 +73,7 @@ Yes, it's a little tedious. Make it a habit and you'll be used to it in no time.
 
 * **Bookmark it** and put it in your url bar, or some place convenient. If you use an iPhone, save it on your homescreen. It's a fullscreen, touch enabled web app.
 
-* **Memorize your key.** If your away from your computer and you need to login to a site that you've used Hatchpass to generate the password with, the key and the master password are the most critical pieces of information. You can't get the same password without them.
+* **Memorize your key.** If you are away from your computer and you need to login to a site that you've used Hatchpass to generate the password with, the key and the master password are the most critical pieces of information. You can't get the same password without them.
 
 ## That's all!
 
