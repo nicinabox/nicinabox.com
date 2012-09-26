@@ -4,7 +4,7 @@ title: "How Hatchpass Works"
 date: 2012-09-25 20:45
 comments: true
 categories: [Projects, Software]
-published: false
+published: true
 ---
 
 #### [Hatchpass](http://beta.hatchpass.org) is a password tool I built to help with the password problem--or, using the same password everywhere. It creates complex, pseudo-random, unique passwords. You don't have to remember any of them.
