@@ -85,6 +85,31 @@ article {
   background: #efefef;
 }
 
+#category-filter {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  #categories {
+    list-style: none;
+    li {
+      float: left;
+      list-style: none;
+      a {
+        font-family: $headerFontFamily;
+        font-weight: bold;
+        display: block;
+        margin-right: 10px;
+        padding: 1px 10px 3px;
+        @include border-radius(20px);
+        font-size: 15px;
+        &.active {
+          background: $secondaryColor;
+          color: #444;
+        }
+      }
+    }
+  }
+}
+
 .entry-content {
   h4 {
     font-family: $bodyFontFamily;

@@ -16,8 +16,18 @@ layout: default
         </div>
       </article>
 
+    <section id="category-filter">
+      <div class="row">
+        <div class="twelve columns">
+          {% include asides/category_list.html %}
+        </div>
+      </div>
+    </section>
+
     {% else %}
-      <article class="archived">
+      {% assign categories = post.categories | join: ' ' | %}
+
+      <article class="archived {{ categories }}">
         {% include mini_post.html %}
       </article>
     {% endif %}

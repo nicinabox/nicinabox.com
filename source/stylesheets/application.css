@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:700,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,700,900);
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic);
 /* normalize.css v2.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -364,7 +364,7 @@ html {
 body {
   background: white;
   font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1;
   color: #222222;
   position: relative;
@@ -455,25 +455,25 @@ figure {
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 18px;
   direction: ltr;
 }
 
 p {
   font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 p.lead {
-  font-size: 20px;
+  font-size: 22.5px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 aside p {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.35;
   font-style: italic;
 }
@@ -484,8 +484,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #222222;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
-  margin-bottom: 16px;
-  margin-top: 16px;
+  margin-bottom: 18px;
+  margin-top: 18px;
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
@@ -498,7 +498,7 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 41px;
 }
 
 h3 {
@@ -506,7 +506,7 @@ h3 {
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 27px;
 }
 
 h5 {
@@ -514,7 +514,7 @@ h5 {
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 hr {
@@ -554,7 +554,7 @@ code {
 
 /* Lists ---------------------- */
 ul, ol {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
   list-style-position: inside;
@@ -610,7 +610,7 @@ blockquote {
 }
 blockquote cite {
   display: block;
-  font-size: 15px;
+  font-size: 17px;
   color: #555555;
 }
 blockquote cite:before {
@@ -730,7 +730,7 @@ form {
 }
 
 label {
-  font-size: 16px;
+  font-size: 18px;
   color: #4d4d4d;
   cursor: pointer;
   display: block;
@@ -742,7 +742,7 @@ label.right {
   text-align: right;
 }
 label.inline {
-  line-height: 34px;
+  line-height: 36px;
   margin: 0 0 12px 0;
 }
 
@@ -759,8 +759,8 @@ label.inline {
   width: 100%;
   padding-top: 0;
   padding-bottom: 0;
-  height: 34px;
-  line-height: 33px;
+  height: 36px;
+  line-height: 35px;
 }
 
 a.button.prefix, a.button.postfix {
@@ -808,10 +808,10 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.75);
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 0 12px 0;
   padding: 6px;
-  height: 34px;
+  height: 36px;
   width: 100%;
   -webkit-transition: all 0.15s linear;
   -moz-transition: all 0.15s linear;
@@ -1081,7 +1081,7 @@ form.custom div.custom.dropdown ul {
 }
 form.custom div.custom.dropdown ul li {
   color: #555;
-  font-size: 15px;
+  font-size: 17px;
   cursor: pointer;
   padding: 3px;
   padding-left: 6px;
@@ -1626,7 +1626,7 @@ that IE7/8 do not support :nth-child.
   cursor: pointer;
   display: inline-block;
   font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1;
   margin: 0;
@@ -1666,14 +1666,14 @@ that IE7/8 do not support :nth-child.
   padding: 15px 30px 16px;
 }
 .button.medium {
-  font-size: 16px;
+  font-size: 18px;
 }
 .button.small {
-  font-size: 13px;
+  font-size: 15px;
   padding: 7px 14px 8px;
 }
 .button.tiny {
-  font-size: 12px;
+  font-size: 14px;
   padding: 5px 10px 6px;
 }
 .button.expand {
@@ -1913,7 +1913,7 @@ input[type=submit].button, button.button {
 .button.dropdown > ul li a {
   display: block;
   color: #555;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: normal;
   padding: 6px 14px;
   text-align: left;
@@ -2299,7 +2299,7 @@ div.button-bar ul.button-group:last-child {
   padding: 0 20px;
   display: block;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
 }
 .nav-bar > li > input {
   margin: 0 10px;
@@ -2357,7 +2357,7 @@ div.button-bar ul.button-group:last-child {
 }
 .flyout p {
   line-height: 1.2;
-  font-size: 15px;
+  font-size: 17px;
 }
 .flyout *:first-child {
   margin-top: 0;
@@ -2397,7 +2397,7 @@ ul.flyout li a, .nav-bar li ul li a {
   border-width: 1px 1px 0 0;
   color: #555;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   height: auto;
   line-height: 1;
   padding: 15px 20px;
@@ -2587,7 +2587,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 .top-bar ul > li a:not(.button) {
   color: white;
   display: block;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   height: 45px;
   line-height: 45px;
@@ -2634,7 +2634,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   -webkit-border-bottom-right-radius: 0;
   border-bottom-right-radius: 0;
   float: left;
-  font-size: 15px;
+  font-size: 17px;
   margin-top: -1px;
   height: 22.5px;
 }
@@ -2647,7 +2647,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   -webkit-border-bottom-left-radius: 0;
   border-bottom-left-radius: 0;
   float: left;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: -1px;
   padding: 5px 12px 4px;
 }
@@ -2715,7 +2715,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 }
 .top-bar ul > li.has-dropdown .dropdown li label {
   color: #6f6f6f;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   margin: 0;
   padding-left: 15px;
@@ -2792,7 +2792,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   color: white;
   display: block;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 17px;
   height: 45px;
   line-height: 45px;
   padding: 0 15px;
@@ -2955,14 +2955,14 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   .top-bar ul li.has-dropdown.moved .dropdown li label {
     margin-bottom: 6px;
     padding-top: 6px !important;
-    font-size: 13px;
+    font-size: 15px;
   }
   .top-bar ul li.has-dropdown.moved .dropdown li:not(.title) {
     padding-bottom: 0;
   }
   .top-bar ul li.has-dropdown.moved .dropdown li:not(.title) a {
     padding: 8px 22.5px;
-    font-size: 16px;
+    font-size: 18px;
   }
   .top-bar ul li.has-dropdown.moved .dropdown li a, .top-bar ul li.has-dropdown.moved .dropdown li label {
     padding: 0 22.5px;
@@ -3001,7 +3001,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   .top-bar ul li.has-dropdown.moved .back.title h5 a {
     padding-top: 8px;
     padding-bottom: 8px;
-    font-size: 24px;
+    font-size: 27px;
     font-weight: bold;
   }
   .top-bar ul li.has-dropdown .dropdown li {
@@ -3469,7 +3469,7 @@ dl.tabs dt {
   cursor: default;
   display: block;
   float: left;
-  font-size: 14px;
+  font-size: 16px;
   height: 40px;
   line-height: 40px;
   padding: 0;
@@ -3491,7 +3491,7 @@ dl.tabs dd {
 dl.tabs dd a {
   color: #6f6f6f;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   height: 40px;
   line-height: 40px;
   padding: 0px 28px;
@@ -3533,7 +3533,7 @@ dl.tabs.vertical dd a {
   border-width: 1px 1px 0 0;
   color: #555;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   height: auto;
   line-height: 1;
   padding: 15px 20px;
@@ -3898,7 +3898,7 @@ div.alert-box {
   display: block;
   padding: 6px 7px 7px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   background-color: #1b5891;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -3942,7 +3942,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 /* Labels ---------------------- */
 .label {
   padding: 1px 4px 2px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -4198,7 +4198,7 @@ ul.side-nav {
 ul.side-nav li {
   display: block;
   list-style: none;
-  margin: 0 0 8px 0;
+  margin: 0 0 9px 0;
 }
 ul.side-nav li a {
   display: block;
@@ -4260,7 +4260,7 @@ ul.pagination li {
   display: block;
   height: 24px;
   color: #999;
-  font-size: 16px;
+  font-size: 18px;
   margin-left: 5px;
 }
 ul.pagination li a {
@@ -4362,7 +4362,7 @@ ul.link-list li a {
 /* Keytroke Characters ---------------------- */
 .keystroke, kbd {
   font-family: "Consolas", "Menlo", "Courier", monospace;
-  font-size: 15px;
+  font-size: 17px;
   padding: 2px 4px 0px;
   margin: 0;
   background: #ededed;
@@ -4451,7 +4451,7 @@ table tfoot tr th,
 table tbody tr td,
 table tr td,
 table tfoot tr td {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 18px;
   text-align: left;
 }
@@ -4459,7 +4459,7 @@ table tfoot tr td {
 table thead tr th,
 table tfoot tr td {
   padding: 8px 10px 9px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: #222;
 }
@@ -4567,6 +4567,17 @@ div.progress.round .meter {
   -ms-border-radius: 1000px;
   -o-border-radius: 1000px;
   border-radius: 1000px;
+}
+
+.button {
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.button.secondary {
+  border: 0;
+  background-color: #ddd;
 }
 
 html .gist .gist-file .gist-syntax .gist-highlight table td.code,
@@ -4692,13 +4703,35 @@ article {
 }
 
 .meta {
-  color: #666;
+  color: #888;
 }
 
 .pagination {
   padding: 20px 0 10px;
   margin-bottom: -30px;
   background: #efefef;
+}
+
+#category-filter {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+#category-filter #categories {
+  list-style: none;
+}
+#category-filter #categories li {
+  float: left;
+  list-style: none;
+}
+#category-filter #categories li a {
+  display: block;
+  margin-right: 10px;
+}
+
+.entry-content h4 {
+  font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
+  line-height: 1.4;
+  font-weight: normal;
 }
 
 .archived {
@@ -4710,6 +4743,7 @@ article {
 }
 .archived .words {
   position: absolute;
+  top: 0;
   height: 100%;
   width: 100%;
 }
@@ -4721,14 +4755,24 @@ article {
 }
 .archived .words .count {
   left: 10px;
+  top: 30%;
   width: 10%;
   position: absolute;
   color: #aaa;
   font-weight: bold;
-  bottom: 20px;
   display: none;
   font-size: 11px;
   font-size: 1.1rem;
+}
+.archived a {
+  font-weight: 300;
+  display: block;
+  padding: 15px 0;
+  color: #222;
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+}
+.archived a div {
+  font-size: 27px;
 }
 .archived a:hover h3 {
   color: #1b5891;
