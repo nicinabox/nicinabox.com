@@ -78,3 +78,5 @@ Yes, it's a little tedious. Make it a habit and you'll be used to it in no time.
 ## That's all!
 
 I've been using Hatchpass daily for over a couple years now. I'd love to hear your feedback if you're using it (or if you're not). I know it's not a perfect solution, but it's an area that needs improvement.
+
+<a class="button radius expand" href="http://beta.hatchpass.org">Try it out &rarr;</a>
