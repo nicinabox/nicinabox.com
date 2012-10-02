@@ -17,7 +17,7 @@ Now, many would say that the the only way to solve the password problem is to ab
 
 It's very common that users will reuse the same password across the web on accounts varying security, from banks to Myspace. The problem is that if any one account is compromised, an attacker could have access to any number of different accounts, including high risk ones.
 
-## How is this different that LastPass, 1Password, etc?
+## How is this different than LastPass, 1Password, etc?
 
 These 3rd party services store your password. That makes them inherently untrustworthy. Hatchpass does not store anything. Since you can easily recreate **your** passwords, storage is an unnecessary risk.
 
