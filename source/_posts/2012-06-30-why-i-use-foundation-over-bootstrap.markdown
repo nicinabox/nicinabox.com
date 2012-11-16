@@ -23,7 +23,7 @@ Now, I feel like I owe you a confession right here. I come from the Ruby communi
 
 Chris Coyier has a great post on [SASS vs LESS](http://css-tricks.com/sass-vs-less/) and why you should be using SASS over LESS. I'm not going to dive into a comparison of the two, but ultimately I feel that SASS is superior to LESS in a lot of ways (that post illustrates them nicely). SASS fits better into the Terminal/Editor workflow, at least in my experience. It's seamless with Ruby. This makes it very easy to use not only SASS, but also Compass, Bourbon, or other Compass/SASS modules. I like when tools work for me, and SASS does that.
 
-Foundation 3 is built with SASS, while Bootstrap is built with LESS. Foundation's ability to integrate with Sinatra, Rails, or a basic Rack app makes integration faster. It's mixins and functions allow you to create rows and columns without cluttering up your markup. Bootstrap uses `.span1` on columns to set their widths. Not exactly semantic compared to Bootstrap's `.one.column`.
+Foundation 3 is built with SASS, while Bootstrap is built with LESS. Foundation's ability to integrate with Sinatra, Rails, or a basic Rack app makes integration faster. It's mixins and functions allow you to create rows and columns without cluttering up your markup. Bootstrap uses `.span1` on columns to set their widths. Not exactly semantic compared to Foundation's `.one.column`.
 
 ## Bundled packages
 
