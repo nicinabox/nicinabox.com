@@ -4,7 +4,7 @@ title: "shortcode.js"
 date: 2012-11-16 19:42
 comments: true
 categories: Projects
-published: false
+published: true
 ---
 
 #### If you know about Wordpress' shortcodes, then this should already be familiar to you. In any case, read on my gallant friend.
