@@ -2,6 +2,21 @@
 
 {% unless page.no_header %}
   <header>
+    {% unless page.meta == false %}
+      <p class="meta">
+        {% include post/date.html %}
+        {{ time }}
+
+        &bull;
+        {% include custom/reading_time.html %}
+
+        {% if site.disqus_short_name and page.comments != false and site.disqus_show_comment_count == true %}
+          &bull;
+          <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a>
+        {% endif %}
+      </p>
+    {% endunless %}
+
     {% if index %}
       <h1 class="entry-title">
         <a href="{{ root_url }}{{ post.url }}">
@@ -22,20 +37,6 @@
       </h1>
     {% endif %}
 
-    {% unless page.meta == false %}
-      <p class="meta">
-        {% include post/date.html %}
-        {{ time }}
-
-        &bull;
-        {% include custom/reading_time.html %}
-
-        {% if site.disqus_short_name and page.comments != false and site.disqus_show_comment_count == true %}
-          &bull;
-          <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a>
-        {% endif %}
-      </p>
-    {% endunless %}
   </header>
 {% endunless %}
 
