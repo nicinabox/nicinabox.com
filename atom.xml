@@ -4,7 +4,7 @@
   <title><![CDATA[Nic Aitch]]></title>
   <link href="http://nicinabox.com/atom.xml" rel="self"/>
   <link href="http://nicinabox.com/"/>
-  <updated>2013-05-05T10:50:08-05:00</updated>
+  <updated>2013-05-05T13:25:15-05:00</updated>
   <id>http://nicinabox.com/</id>
   <author>
     <name><![CDATA[Nic Aitch]]></name>
@@ -44,14 +44,16 @@
 
 <p><strong>You&#8217;re looking at it!</strong> The section overview at the top is generated from the <code>h2</code>s on the page. View the source to the see the actual implementation, or <a href="https://github.com/nicinabox/shortcode.js">check out the docs on Github</a>.</p>
 
-<script src="https://raw.github.com/nicinabox/shortcode.js/master/dist/jquery.shortcode.min.js"></script>
+<script src="https://rawgithub.com/nicinabox/shortcode.js/master/dist/jquery.shortcode.js"></script>
 
 
-<script src="https://raw.github.com/nicinabox/shortcode.js/master/dist/jquery.shortcode.services.js"></script>
+<script src="https://rawgithub.com/nicinabox/shortcode.js/master/dist/jquery.shortcode.services.js"></script>
+
+
 
 
 <script type="text/javascript">
-  $('.entry-content').shortcode();
+  $('#main').shortcode();
 </script>
 
 ]]></content>
