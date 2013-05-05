@@ -1,0 +1,44 @@
+ul#colors {
+  overflow: auto;
+}
+ul#colors .caps {
+  display: inline !important;
+}
+ul#colors, #colors li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul#colors li {
+    border: 1px solid #aaa;
+    padding: 1px;
+    width: 30%;
+    height: 75px;
+    margin: 5px;
+  	float: left;
+}
+ul#colors li div {
+   height: 100%;
+   padding: 5px;
+}
+#colors .color_name, #colors .color_hex {
+  padding: 3px;
+  color: white;
+  background: #000;
+  background: rgba(0, 0, 0, .3);
+  display: block;
+  opacity: 0;
+  -moz-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+ul#colors li:hover .color_name, ul#colors li:hover .color_hex {
+  display: block;
+  opacity: 1;
+}
+ul#colors .color_name {
+    font-size: 12px;
+}
+ul#colors .color_hex {
+    font-size: 18px;
+}

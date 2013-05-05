@@ -1,0 +1,17 @@
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks
+  RewriteEngine On
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+
+  # Fix old permalinks
+  RedirectMatch 301 ^/blog/\d{4}/\d{2}/\d{2}/(.*)$ /blog/$1
+  RedirectMatch 301 ^/projects/(.*)$ /blog/$1
+
+</IfModule>

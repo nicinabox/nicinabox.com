@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>
+      How Hatchpass Works - Nic Aitch
+    </title>
+    <meta name="author" content="Nic Aitch">
+
+    
+
+    <meta name="description" content="Hatchpass is a password tool I built to help with the password problem&#8211;or, using the same password everywhere. It creates complex, pseudo- &hellip;">
+    
+    <meta name="viewport" content="width=device-width">
+
+    
+
+    <link rel="canonical" href="
+      http://nicinabox.com
+      
+        /blog/how-hatchpass-works
+      
+    ">
+    <link href="/favicon.png" rel="icon">
+    <link href="/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/mobile.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+    <script src="/javascripts/modernizr-2.6.2.js"></script>
+    <!--
+    <script src="/javascripts/ender.js"></script>
+    <script src="/javascripts/octopress.js" type="text/javascript"></script>
+    -->
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/javascripts/application.js"></script>
+    <link href="/atom.xml" rel="alternate" title="Nic Aitch" type="application/atom+xml">
+
+    
+    
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4f83803b613f5d23300000a9');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+</head>
+
+<body   >
+
+  <header role="banner" id="header">
+    <div class="row">
+      <div class="twelve columns">
+  <hgroup>
+    <h1>
+      <a href="/" id="logo">
+        <img src="/images/home.png" alt="">
+        Nic Aitch
+      </a>
+      
+        <small>JavaScript hacker.</small>
+      
+    </h1>
+  </hgroup>
+</div>
+
+    </div>
+  </header>
+
+  <div id="main">
+    <article class="entry" role="article">
+  <div class="row">
+    <div class="twelve columns">
+      
+
+
+  <header>
+    
+      <h1 class="entry-title">
+        
+          How Hatchpass Works
+        
+      </h1>
+    
+
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+        <time datetime="2012-09-25T20:45:00-05:00" pubdate data-updated="true">Sep 25<span>th</span>, 2012</time>
+
+        &bull;
+        
+
+<span>
+  Reading time:
+
+  <b>
+    
+      about 5 minutes
+    
+  </b>
+</span>
+
+
+        
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><h4><a href="http://beta.hatchpass.org">Hatchpass</a> is a password tool I built to help with the password problem&#8211;or, using the same password everywhere. It creates complex, pseudo-random, unique passwords. You don&#8217;t have to remember any of them.</h4>
+
+<!-- more -->
+
+
+<p><img src="/images/posts/hatchpass.png"></p>
+
+<p>Now, many would say that the the only way to solve the password problem is to absolve passwords altogether. And, while this is probably true, they&#8217;re not going away any time soon.</p>
+
+<p>It&#8217;s very common that users will reuse the same password across the web on accounts varying security, from banks to Myspace. The problem is that if any one account is compromised, an attacker could have access to any number of different accounts, including high risk ones.</p>
+
+<h2>How is this different than LastPass, 1Password, etc?</h2>
+
+<p>These 3rd party services store your password. That makes them inherently untrustworthy. Hatchpass does not store anything. Since you can easily recreate <strong>your</strong> passwords, storage is an unnecessary risk.</p>
+
+<p>There is no sign up, no account, no &#8220;user&#8221;. You simply use it.</p>
+
+<p>They also generate actual random passwords. Since they&#8217;re random, they have to be stored. You can&#8217;t get that random password again.</p>
+
+<h2>I get it. How does this help me?</h2>
+
+<p>Hatchpass generates unique passwords. The passwords aren&#8217;t <em>randomly</em> generated, however. They&#8217;re mathematically created based on an algorithm. By combining the same pieces of information (a key, password, and domain), you&#8217;ll always get the same generated password.</p>
+
+<p><img src="/images/posts/hatchpass-settings.png"></p>
+
+<p>Let me explain more about these pieces.</p>
+
+<h3>The key</h3>
+
+<p>Upon visiting, a pseudo-random key will be generated for you. It&#8217;s a 5 character string based on the time you visited (to the millisecond). This key is effectively unique to you and helps randomize the algorithm.</p>
+
+<h3>The master password</h3>
+
+<p>This is what makes Hatchpass easy to use. If you&#8217;re already using the same password on every site, this is all you really need to remember. Hatchpass basically translates this (probably simple) password into a complex password. You aren&#8217;t expected to remember the generated passwords, you can always comeback and regenerate it.</p>
+
+<p>Remember, the best kept secret is one nobody knows.</p>
+
+<h3>The domain</h3>
+
+<p>This is the site you want to log in to. Once you type your password and the domain, a password will be created on the fly. <strong>For a given key, password, and domain, you will always get the same password.</strong></p>
+
+<p>This is important. Remember, the generated passwords <strong>aren&#8217;t random</strong>. They&#8217;re mathematically recreatable with the information you provided. Since your password (and probably key) are secret, you don&#8217;t need to worry about someone having the same generated password as you. The key randomizes this.</p>
+
+<h2>But, security!</h2>
+
+<p>Hatchpass is a JavaScript application (Backbone to be exact). It has no database. In fact, nothing is ever even sent to the server. Once you&#8217;ve loaded the page, all calculations are done <strong>in your browser</strong>.</p>
+
+<p>localStorage is utilized to save settings and recent domains. If you&#8217;re unfamiliar with localStorage, this means that everything is stored right in your browser, similar to a cookie. It&#8217;s not a cookie, however, and won&#8217;t be cleared if you clear your cookies.</p>
+
+<p>It can&#8217;t be accessed by other sites or applications. It&#8217;s specific to the Hatchpass domain and only it can see the settings.</p>
+
+<p><img src="/images/posts/hatchpass-recent.png"></p>
+
+<h2>Okay, but how do I use it?</h2>
+
+<p>When you register on a site, open up Hatchpass, type the domain name, and copypasta the password into the registration form. Whenever you want to login again, open Hatchpass, type the domain, copypasta. Easy peasy.</p>
+
+<p><img src="/images/posts/hatchpass-generated.png"></p>
+
+<p>Yes, it&#8217;s a little tedious. Make it a habit and you&#8217;ll be used to it in no time. Your real life is at stake here.</p>
+
+<h2>Tips</h2>
+
+<ul>
+<li><p><strong>Save your settings</strong> unless you&#8217;re on a public computer. View the Settings pane and turn on &#8220;Save All&#8221;. This will save all your settings and your master password. Upon subsequent visits, all you need to do is type the domain you want to log in to.</p></li>
+<li><p><strong>Bookmark it</strong> and put it in your url bar, or some place convenient. If you use an iPhone, save it on your homescreen. It&#8217;s a fullscreen, touch enabled web app.</p></li>
+<li><p><strong>Memorize your key.</strong> If you are away from your computer and you need to login to a site that you&#8217;ve used Hatchpass to generate the password with, the key and the master password are the most critical pieces of information. You can&#8217;t get the same password without them.</p></li>
+</ul>
+
+
+<h2>That&#8217;s all!</h2>
+
+<p>I&#8217;ve been using Hatchpass daily for over a couple years now. I&#8217;d love to hear your feedback if you&#8217;re using it (or if you&#8217;re not). I know it&#8217;s not a perfect solution, but it&#8217;s an area that needs improvement.</p>
+
+<p><a class="button radius expand" href="http://beta.hatchpass.org">Try it out &rarr;</a></p>
+</div>
+
+
+      <footer>
+        <p class="meta">
+          
+        </p>
+        
+          <div class="sharing">
+  
+  
+  
+</div>
+
+        
+
+        <div id="intranav" class="row">
+          <div class="six columns">
+            
+              <a class="basic-alignment left" href="/blog/superslides-a-fullscreen-jquery-slider/" title="Previous Post: Superslides: A fullscreen jQuery slider">&laquo; Superslides: A fullscreen jQuery slider</a>
+            
+          </div>
+          <div class="six columns">
+            
+              <a class="basic-alignment right" href="/blog/superslides-0-dot-4-1-released/" title="next Post: Superslides 0.4.1 Released">Superslides 0.4.1 Released &raquo;</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</article>
+
+
+
+<div class="row">
+  <div class="twelve columns">
+    <section>
+      <h2>Comments</h2>
+      <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+    </section>
+  </div>
+</div>
+
+
+
+
+<aside class="sidebar four columns">
+  
+    
+  
+</aside>
+
+
+  </div>
+
+  <footer role="contentinfo" id="footer">
+    <div class="row">
+      <div class="twelve columns">
+        
+  <section>
+  <h4>About me</h4>
+  <p>
+    I'm <a href="mailto:nic@nicinabox.com">Nic Aitch</a>, a developer at Neoteric Design in Chicago. I specialize in front end &amp; interaction development. I ride an <a href="http://www.flickr.com/photos/nic-h/7159783258/in/set-72157629638963998/lightbox/">orange 1976 CB200</a>. Fork me on <a href="http://github.com/nicinabox">Github</a> or follow me on <a href="http://twitter.com/nicinabox">Twitter</a>.
+  </p>
+</section>
+
+
+<p>
+  <small>
+    Copyright &copy; 2013 Nic Aitch -
+    <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+  </small>
+</p>
+
+      </div>
+    </div>
+
+    
+
+<script type="text/javascript">
+      var disqus_shortname = 'nicinabox';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://nicinabox.com/blog/how-hatchpass-works/';
+        var disqus_url = 'http://nicinabox.com/blog/how-hatchpass-works/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+  </footer>
+
+  </body>
+</html>

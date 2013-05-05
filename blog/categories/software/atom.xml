@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Software | Nic Aitch]]></title>
+  <link href="http://nicinabox.com/blog/categories/software/atom.xml" rel="self"/>
+  <link href="http://nicinabox.com/"/>
+  <updated>2013-05-05T10:50:08-05:00</updated>
+  <id>http://nicinabox.com/</id>
+  <author>
+    <name><![CDATA[Nic Aitch]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How Hatchpass Works]]></title>
+    <link href="http://nicinabox.com/blog/how-hatchpass-works/"/>
+    <updated>2012-09-25T20:45:00-05:00</updated>
+    <id>http://nicinabox.com/blog/how-hatchpass-works</id>
+    <content type="html"><![CDATA[<h4><a href="http://beta.hatchpass.org">Hatchpass</a> is a password tool I built to help with the password problem--or, using the same password everywhere. It creates complex, pseudo-random, unique passwords. You don't have to remember any of them.</h4>
+
+<!-- more -->
+
+
+<p><img src="/images/posts/hatchpass.png"></p>
+
+<p>Now, many would say that the the only way to solve the password problem is to absolve passwords altogether. And, while this is probably true, they're not going away any time soon.</p>
+
+<p>It's very common that users will reuse the same password across the web on accounts varying security, from banks to Myspace. The problem is that if any one account is compromised, an attacker could have access to any number of different accounts, including high risk ones.</p>
+
+<h2>How is this different than LastPass, 1Password, etc?</h2>
+
+<p>These 3rd party services store your password. That makes them inherently untrustworthy. Hatchpass does not store anything. Since you can easily recreate <strong>your</strong> passwords, storage is an unnecessary risk.</p>
+
+<p>There is no sign up, no account, no "user". You simply use it.</p>
+
+<p>They also generate actual random passwords. Since they're random, they have to be stored. You can't get that random password again.</p>
+
+<h2>I get it. How does this help me?</h2>
+
+<p>Hatchpass generates unique passwords. The passwords aren't <em>randomly</em> generated, however. They're mathematically created based on an algorithm. By combining the same pieces of information (a key, password, and domain), you'll always get the same generated password.</p>
+
+<p><img src="/images/posts/hatchpass-settings.png"></p>
+
+<p>Let me explain more about these pieces.</p>
+
+<h3>The key</h3>
+
+<p>Upon visiting, a pseudo-random key will be generated for you. It's a 5 character string based on the time you visited (to the millisecond). This key is effectively unique to you and helps randomize the algorithm.</p>
+
+<h3>The master password</h3>
+
+<p>This is what makes Hatchpass easy to use. If you're already using the same password on every site, this is all you really need to remember. Hatchpass basically translates this (probably simple) password into a complex password. You aren't expected to remember the generated passwords, you can always comeback and regenerate it.</p>
+
+<p>Remember, the best kept secret is one nobody knows.</p>
+
+<h3>The domain</h3>
+
+<p>This is the site you want to log in to. Once you type your password and the domain, a password will be created on the fly. <strong>For a given key, password, and domain, you will always get the same password.</strong></p>
+
+<p>This is important. Remember, the generated passwords <strong>aren't random</strong>. They're mathematically recreatable with the information you provided. Since your password (and probably key) are secret, you don't need to worry about someone having the same generated password as you. The key randomizes this.</p>
+
+<h2>But, security!</h2>
+
+<p>Hatchpass is a JavaScript application (Backbone to be exact). It has no database. In fact, nothing is ever even sent to the server. Once you've loaded the page, all calculations are done <strong>in your browser</strong>.</p>
+
+<p>localStorage is utilized to save settings and recent domains. If you're unfamiliar with localStorage, this means that everything is stored right in your browser, similar to a cookie. It's not a cookie, however, and won't be cleared if you clear your cookies.</p>
+
+<p>It can't be accessed by other sites or applications. It's specific to the Hatchpass domain and only it can see the settings.</p>
+
+<p><img src="/images/posts/hatchpass-recent.png"></p>
+
+<h2>Okay, but how do I use it?</h2>
+
+<p>When you register on a site, open up Hatchpass, type the domain name, and copypasta the password into the registration form. Whenever you want to login again, open Hatchpass, type the domain, copypasta. Easy peasy.</p>
+
+<p><img src="/images/posts/hatchpass-generated.png"></p>
+
+<p>Yes, it's a little tedious. Make it a habit and you'll be used to it in no time. Your real life is at stake here.</p>
+
+<h2>Tips</h2>
+
+<ul>
+<li><p><strong>Save your settings</strong> unless you're on a public computer. View the Settings pane and turn on "Save All". This will save all your settings and your master password. Upon subsequent visits, all you need to do is type the domain you want to log in to.</p></li>
+<li><p><strong>Bookmark it</strong> and put it in your url bar, or some place convenient. If you use an iPhone, save it on your homescreen. It's a fullscreen, touch enabled web app.</p></li>
+<li><p><strong>Memorize your key.</strong> If you are away from your computer and you need to login to a site that you've used Hatchpass to generate the password with, the key and the master password are the most critical pieces of information. You can't get the same password without them.</p></li>
+</ul>
+
+
+<h2>That's all!</h2>
+
+<p>I've been using Hatchpass daily for over a couple years now. I'd love to hear your feedback if you're using it (or if you're not). I know it's not a perfect solution, but it's an area that needs improvement.</p>
+
+<p><a class="button radius expand" href="http://beta.hatchpass.org">Try it out &rarr;</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Plotting elements on a circle with CSS &amp; Ruby]]></title>
+    <link href="http://nicinabox.com/blog/plotting-elements-on-a-circle-with-css-and-ruby/"/>
+    <updated>2012-04-09T19:19:00-05:00</updated>
+    <id>http://nicinabox.com/blog/plotting-elements-on-a-circle-with-css-and-ruby</id>
+    <content type="html"><![CDATA[<p>I ran into a challenge today where I needed to plot elements in a circle using their CSS offset. I found a some <a href="http://snipt.net/guttersleeper/plot-points-on-circle/">javascript plot functions</a> that did nearly exactly what I wanted.</p>
+
+<p>Here's my solution in Ruby.</p>
+
+<!-- more -->
+
+
+<p><div><script src='https://gist.github.com/2347545.js?file='></script>
+<noscript><pre><code>  def angle_to_radians(angle)
+    Math::PI * (angle * -1.0 / 180)
+  end
+
+  def radians_to_cartesian(radian, radius, offset_x, offset_y)
+    {
+      :x =&gt; (offset_x + (radius * Math::sin(radian))).round,
+      :y =&gt; (offset_y + (radius * Math::cos(radian))).round
+    }
+  end
+</code></pre></noscript></div>
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Shortcutting Heroku Deployments]]></title>
+    <link href="http://nicinabox.com/blog/shortcutting-heroku-deployments/"/>
+    <updated>2011-09-12T10:53:00-05:00</updated>
+    <id>http://nicinabox.com/blog/shortcutting-heroku-deployments</id>
+    <content type="html"><![CDATA[<p>If you are familiar with <a href="http://heroku.com">Heroku</a>, you may know that deploying is as easy as pushing to their remote repository:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git push heroku</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>But, this can get really monotonous, especially if you're frequently pushing to a staging app (then you have to specify the branch name as well). To make things a little easier I whipped up a quick shell function to make deployments a snap.</p>
+
+<!--more-->
+
+
+<p>We always name our Heroku remotes <em>staging</em> and <em>production</em>. To deploy to staging, for instance, just pass the branch name you want to deploy:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ deploy dev</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Here's the function. Just drop it in your <code>.bashrc</code> (or whatever shell config you use).</p>
+
+<p><div><script src='https://gist.github.com/1072008.js?file='></script>
+<noscript><pre><code># $ deploy dev  // Deploys to staging
+# $ deploy      // Deploys to production
+function deploy() {
+  if [[ $@ != &quot;&quot; ]]; then
+    git push staging $@:master
+  else
+    git push production
+  fi
+}
+</code></pre></noscript></div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>
