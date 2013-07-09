@@ -2,6 +2,7 @@
 layout: post
 title: "shortcode.js"
 date: 2012-11-16 19:42
+description: A JavaScript implementation of Wordpress shortcodes.
 comments: true
 categories: Projects
 published: true
@@ -32,8 +33,9 @@ By shifting the replacement to the frontend, not only does the action happen asy
 
 **You're looking at it!** The section overview at the top is generated from the `h2`s on the page. View the source to the see the actual implementation, or [check out the docs on Github](https://github.com/nicinabox/shortcode.js).
 
-<script src="https://raw.github.com/nicinabox/shortcode.js/master/dist/jquery.shortcode.min.js"></script>
-<script src="https://raw.github.com/nicinabox/shortcode.js/master/dist/jquery.shortcode.services.js"></script>
+<script src="https://rawgithub.com/nicinabox/shortcode.js/master/dist/jquery.shortcode.js"></script>
+<script src="https://rawgithub.com/nicinabox/shortcode.js/master/dist/jquery.shortcode.services.js"></script>
+
 <script type="text/javascript">
-  $('.entry-content').shortcode();
+  $('#main').shortcode();
 </script>
