@@ -2644,7 +2644,7 @@ div.orbit-wrapper span.rotator {
   position: absolute;
   top: 0;
   left: -20px;
-  background: url('/images/foundation/orbit/rotator-black.png?1350659194') no-repeat;
+  background: url('/images/foundation/orbit/rotator-black.png?1373576288') no-repeat;
   z-index: 3;
 }
 div.orbit-wrapper span.rotator.move {
@@ -2663,7 +2663,7 @@ div.orbit-wrapper span.mask {
 div.orbit-wrapper span.mask.move {
   width: 40px;
   left: 0;
-  background: url('/images/foundation/orbit/timer-black.png?1350659194') repeat 0 0;
+  background: url('/images/foundation/orbit/timer-black.png?1373576288') repeat 0 0;
 }
 div.orbit-wrapper span.pause {
   display: block;
@@ -2672,12 +2672,12 @@ div.orbit-wrapper span.pause {
   position: absolute;
   top: 0;
   left: 0;
-  background: url('/images/foundation/orbit/pause-black.png?1350659194') no-repeat;
+  background: url('/images/foundation/orbit/pause-black.png?1373576288') no-repeat;
   z-index: 4;
   opacity: 0;
 }
 div.orbit-wrapper span.pause.active {
-  background: url('/images/foundation/orbit/pause-black.png?1350659194') no-repeat 0 -40px;
+  background: url('/images/foundation/orbit/pause-black.png?1373576288') no-repeat 0 -40px;
 }
 div.orbit-wrapper div.timer:hover span.pause, div.orbit-wrapper span.pause.active {
   opacity: 1;
@@ -2718,21 +2718,21 @@ div.orbit-wrapper div.slider-nav span {
   cursor: pointer;
 }
 div.orbit-wrapper div.slider-nav span.right {
-  background: url('/images/foundation/orbit/right-arrow.png?1350659194');
+  background: url('/images/foundation/orbit/right-arrow.png?1373576288');
   background-size: 100%;
   right: 0;
 }
 div.orbit-wrapper div.slider-nav span.left {
-  background: url('/images/foundation/orbit/left-arrow.png?1350659194');
+  background: url('/images/foundation/orbit/left-arrow.png?1373576288');
   background-size: 100%;
   left: 0;
 }
 
 .lt-ie9 div.orbit-wrapper div.slider-nav span.right {
-  background: url('/images/foundation/orbit/right-arrow-small.png?1350659194');
+  background: url('/images/foundation/orbit/right-arrow-small.png?1373576288');
 }
 .lt-ie9 div.orbit-wrapper div.slider-nav span.left {
-  background: url('/images/foundation/orbit/left-arrow-small.png?1350659194');
+  background: url('/images/foundation/orbit/left-arrow-small.png?1373576288');
 }
 
 /* Bullet Nav ---------------------- */
@@ -2751,7 +2751,7 @@ ul.orbit-bullets li {
   cursor: pointer;
   color: #999999;
   text-indent: -9999px;
-  background: url('/images/foundation/orbit/bullets.jpg?1350659194') no-repeat 4px 0;
+  background: url('/images/foundation/orbit/bullets.jpg?1373576288') no-repeat 4px 0;
   width: 13px;
   height: 12px;
   overflow: hidden;
@@ -5429,6 +5429,11 @@ figure.code figcaption, .gist-file figcaption, pre figcaption {
   background: #eee;
 }
 
+h2 {
+  font-size: 36px;
+  font-size: 3.6rem;
+}
+
 body {
   background: #f7f7f7;
 }
@@ -5461,15 +5466,20 @@ code {
 
 .button {
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 #logo img {
   position: absolute;
-  left: -30px;
-  top: 19px;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-  opacity: 0.3;
+  left: -26px;
+  top: 29px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
   display: none;
+  width: 18px;
 }
 #logo:hover img {
   display: inline;
@@ -5514,7 +5524,13 @@ article {
 }
 
 .meta {
-  color: #888;
+  color: #aaa;
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: -10px;
 }
 
 .pagination {
@@ -5624,6 +5640,20 @@ article {
 .overview a {
   padding: 5px 0;
   display: block;
+}
+
+#intranav {
+  margin: 40px 0;
+  line-height: 1.3;
+}
+
+#meta-footer {
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #aaa;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
 @media only screen and (max-width: 650px) {
